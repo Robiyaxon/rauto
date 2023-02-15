@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { addcar, editcar, getcar, getcars, rauto } from '../api'
+import { addcar, editcar, getcar,  rauto } from '../api'
 import {MainApi} from "../../api";
 
 const car = createSlice({
