@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Button, Form, Image, Input} from 'antd';
+import { Form, Image, Input} from 'antd';
 import "./update_client.css"
 import AdminHeader from "../../components/admin_header/admin_header";
 import axios from "axios";
@@ -17,7 +17,7 @@ function UpdateClients() {
 
 
     const {lang} = useSelector(state => state.lang)
-    const {req,name,region,date,deleteOrd,Batafsil,success} = Language;
+    const {req,name,region,date,success} = Language;
 
     useEffect(() => {
         if (!!id)
@@ -25,6 +25,7 @@ function UpdateClients() {
                 setData(res?.data?.data)
                 form.setFieldsValue(res?.data?.data)
             })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     const onFinish = (values) => {

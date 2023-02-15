@@ -1,18 +1,19 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
 import { Button, Divider, Form, Input } from "antd";
 import { useSelector } from "react-redux";
 import { Language } from "../../lang/Languages";
 import phone_i from "../../assets/icons/phone.png";
 import mail_i from "../../assets/icons/mail.png";
-import facebook_icon from "../../assets/icons/facebook.png";
-import telegram_i from '../../images/telegram_i.png'
+// import facebook_icon from "../../assets/icons/facebook.png";
+// import telegram_i from '../../images/telegram_i.png'
 import icon_location from "../../assets/icons/location_white.png";
-import instagram_icon from "../../assets/icons/instagram.png";
+// import instagram_icon from "../../assets/icons/instagram.png";
 import calendar_i from "../../images/calendar.png";
 
 function Contact(props) {
     const { lang } = useSelector(state => state.lang)
-    const { Kontaktlar, contactInfo, contactMail, m1, m2, mailA, req, name, desc, send, mail, phone, adres, f3, ishGraf, ishVaqt1, ishVaqt2, ishVaqt3 } = Language;
+    const { Kontaktlar, contactInfo, contactMail, m1, m2,  req, name, desc, send,  phone, adres, f3, ishGraf, ishVaqt1, ishVaqt2, ishVaqt3 } = Language;
 
     const onFinish = (values) => {
         console.log('Success:', values);

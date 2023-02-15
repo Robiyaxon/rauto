@@ -48,9 +48,9 @@ const CreditAuto = () => {
         comment_num,
         how_much,
         passport,
-        note_comment,
+        // note_comment,
         yuborish,
-        shartnoma,
+        // shartnoma,
         passportid1,
         passportid2,
         passportid3,
@@ -64,15 +64,16 @@ const CreditAuto = () => {
 
     useEffect(() => {
         dispatch(getCar(id))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    function createMarkup() {
-        return {__html: shartnoma[lang]}
-    }
+    // function createMarkup() {
+    //     return {__html: shartnoma[lang]}
+    // }
 
-    function createMarkup1() {
-        return {__html: note_comment[lang]}
-    }
+    // function createMarkup1() {
+    //     return {__html: note_comment[lang]}
+    // }
 
     function createMarkup2() {
         return {__html: passportimage[lang]}
@@ -110,11 +111,11 @@ const CreditAuto = () => {
         }
     }
 
-    const dummyRequest = ({file, onSuccess}) => {
-        setTimeout(() => {
-            onSuccess("ok")
-        }, 0)
-    }
+    // const dummyRequest = ({file, onSuccess}) => {
+    //     setTimeout(() => {
+    //         onSuccess("ok")
+    //     }, 0)
+    // }
 
 
     const handleChange1 = (info) => {

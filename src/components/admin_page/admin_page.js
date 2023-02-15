@@ -19,6 +19,7 @@ useEffect(() => {
     if(localStorage.getItem("user_token")){
         navigate("/admin/cards")
     }
+// eslint-disable-next-line react-hooks/exhaustive-deps
 },[localStorage.getItem("user_token")])
     return (
         <div>

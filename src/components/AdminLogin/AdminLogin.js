@@ -48,6 +48,7 @@ function AdminLogin() {
 
     useEffect(() => {
         if (!!token) navigate('/admin/cards')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [token])
 
     return (

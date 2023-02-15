@@ -5,7 +5,7 @@ import {ResendLink} from "./check-email.e";
 import "./code.css"
 import axios from "../../../api";
 import {useNavigate} from "react-router";
-import lang from "../../../lang/lang";
+// import lang from "../../../lang/lang";
 import {useSelector} from "react-redux";
 import {Language} from "../../../lang/Languages";
 
@@ -101,6 +101,7 @@ function CheckEmail({k, setStep}) {
 
     useEffect(() => {
         clearTimer(getDeadTime());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

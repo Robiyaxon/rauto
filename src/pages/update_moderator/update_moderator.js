@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {Button, Form, Input} from 'antd';
 import "./update_moderator.css"
 import AdminHeader from "../../components/admin_header/admin_header";
@@ -20,6 +20,7 @@ function UpdateModerator() {
             axios.get(`${MainApi}/xodim/${id}`).then(res => {
                 form.setFieldsValue(res?.data?.data)
             })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     const onFinish = (values) => {

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link, useNavigate, useParams } from 'react-router-dom'
@@ -19,15 +20,18 @@ function AddClientsForm() {
     useEffect(() => {
         if (!!id) dispatch(getClient(id))
         if (!!!id) setData({ ismizuz: '', ismizru: '', data: '' })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     useEffect(() => {
         if (!!client) setData(client)
         if (!!!id) setData({ ismizuz: '', ismizru: '', data: '' })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [client])
 
     useEffect(() => {
         if (code) navigate('/admin/clients')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [code])
 
     const saveClient = () => {

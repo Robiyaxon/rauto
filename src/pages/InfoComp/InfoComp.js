@@ -25,10 +25,12 @@ function InfoComp(props) {
 
     const handleSubmit = () => {
         if (!!file) {
+            // eslint-disable-next-line new-parens
             const formData = new FormData
             formData.append("photo", file)
             axios.post(`${MainApi}/exel/add`, formData).then(res => {
                toast.success(success[lang])
+            // eslint-disable-next-line dot-location
             }).
                 catch(err => toast.error("Error"))
         }

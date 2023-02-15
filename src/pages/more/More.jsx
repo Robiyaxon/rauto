@@ -61,6 +61,7 @@ function More() {
             .get(`${MainApi}/car/${id}`)
             .then(res => setCar(res.data.data))
             .catch(err => console.log(err))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return !!car ? (

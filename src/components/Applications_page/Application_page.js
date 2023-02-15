@@ -7,6 +7,7 @@ import {MainApi} from "../../api";
 const Application_page = () => {
     const {id} = useParams()
     const [bank, setBank] = useState([])
+    // eslint-disable-next-line no-unused-vars
     const [loading, setLoading] = useState(false)
     const columns = [
         //     {

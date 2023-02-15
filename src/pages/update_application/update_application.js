@@ -34,6 +34,7 @@ function UpdateApplication() {
                 })
                 form.setFieldsValue(a)
             })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     const onFinish = (values) => {

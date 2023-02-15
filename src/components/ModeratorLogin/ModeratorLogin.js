@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/heading-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import {useEffect, useRef, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import axios from "../../api";
@@ -43,6 +45,7 @@ function ModeratorLogin() {
     }
     useEffect(() => {
         if (!!token) navigate('/admin/cards')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [token])
 
     const {lang} = useSelector((state) => state.lang);

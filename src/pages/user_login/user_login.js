@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/heading-has-content */
 import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button, message, Space } from 'antd';
+import {  message } from 'antd';
 import axios from "../../api";
 import { Language } from "../../lang/Languages";
 import { useSelector } from "react-redux";
@@ -84,6 +86,7 @@ function UserLogin() {
     // некоторые
     useEffect(() => {
         if (!!token) navigate('/admin/cards')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [token])
 
     const { lang } = useSelector(state => state.lang)

@@ -38,6 +38,7 @@ function AdminCards() {
             .catch((err) => new Error(err));
     };
 
+    // eslint-disable-next-line no-unused-vars
     const {isLoading} = useSelector((state) => state.car);
 
     const deleteCar = (id) => {
@@ -48,7 +49,7 @@ function AdminCards() {
             onOk() {
                 axios
                     .delete(`${MainApi}/car/${id}`)
-                    .then((res) => {
+                    .then(() => {
                         dispatch(getCars());
                     })
                     .catch((err) => console.log(err));
@@ -56,10 +57,6 @@ function AdminCards() {
         })
     };
 
-    const logout = () => {
-        localStorage.clear()
-        navigate("/")
-    }
 
     useEffect(() => {
         const timer = setTimeout(() => {

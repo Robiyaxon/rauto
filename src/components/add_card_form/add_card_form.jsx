@@ -38,11 +38,13 @@ function AddCardForm() {
 
     useEffect(() => {
         if (!!car) Object.keys(car).forEach(key => setValue(key, car[key]))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [car])
 
     useEffect(() => {
         if (!!id) dispatch(getCar(id))
         else reset()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     const obSubmit = values => {
@@ -82,6 +84,7 @@ function AddCardForm() {
         if (!!localStorage.getItem("admin_token"))
             setData(fields)
         else setData(fields.filter(i => i.key !== "aksiya"))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [fields])
 
     return (

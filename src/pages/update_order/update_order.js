@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Button, Form, Input} from 'antd';
+import React, {useEffect} from 'react';
+import { Form, Input} from 'antd';
 import "./update_order.css"
 import AdminHeader from "../../components/admin_header/admin_header";
 import axios from "axios";
@@ -19,6 +19,7 @@ function UpdateOrder() {
             axios.get(`${MainApi}/order/${id}`).then(res => {
                 form.setFieldsValue(res?.data?.data)
             })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     const onFinish = (values) => {

@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {Button, Table} from "antd";
 import {useNavigate} from "react-router";
-import lang from "../../lang/lang";
+// import lang from "../../lang/lang";
 import {useSelector} from "react-redux";
 import {Language} from "../../lang/Languages";
 
@@ -75,6 +75,7 @@ function Clients({dataSource, deleteClient}) {
                 )
             }
         } : {},
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     ]},[lang]
     );
 

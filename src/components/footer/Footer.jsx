@@ -9,7 +9,7 @@ import { Language } from "./../../lang/Languages";
 function Footer() {
   const { lang } = useSelector((state) => state.lang);
 
-  const { f1, f2, f3, f4, f5, f6, f7, f8, f9, BIZNING_MIJOZLAR, Kompaniya } = Language;
+  const {  f2,  f4, f5, f6, f7, f8, f9, BIZNING_MIJOZLAR, Kompaniya } = Language;
 
   return (
     <footer className="footer">

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import LoanJS from "loanjs";
-import { useReactToPrint } from "react-to-print";
+// import { useReactToPrint } from "react-to-print";
 import { useSelector } from "react-redux";
 import { Language } from "../../lang/Languages";
 import { useDispatch } from "react-redux";

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import {useLocation} from "react-router";
 import {Link} from 'react-router-dom'
 import {Button, Col, Form, Input, Modal, Row} from 'antd'
@@ -17,7 +18,7 @@ function CardsAdmin() {
     const [banks, setBanks] = useState([])
     const [type, setType] = useState(null)
     const {lang} = useSelector(state => state.lang)
-    const {deleteOrd,search,home,list,create} = Language
+    const {deleteOrd,search,home} = Language
 
     useEffect(() => {
         if (!!localStorage.getItem("user_token")) {

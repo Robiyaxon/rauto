@@ -6,7 +6,7 @@ import Banks from "../../components/banks/banks";
 import axios from "axios";
 import {MainApi} from "../../api";
 import {useEffect, useState} from "react";
-import lang from "../../lang/lang";
+// import lang from "../../lang/lang";
 import {useSelector} from "react-redux";
 import {Language} from "../../lang/Languages";
 

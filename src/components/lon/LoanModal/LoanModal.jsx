@@ -6,6 +6,7 @@ import { Language } from "../../../lang/Languages";
 import { useSelector } from "react-redux";
 
 const LoanModal = ({ isModalOpen, handleCancel }) => {
+  // eslint-disable-next-line no-unused-vars
   const { showModal, handleOk, LoanTable } = UseCalculate();
   const { lang } = useSelector((state) => state.lang);
 

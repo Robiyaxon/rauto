@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -39,6 +40,7 @@ function ClientsAdmin() {
 
     useEffect(() => {
         dispatch(getClients())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

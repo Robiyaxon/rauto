@@ -15,8 +15,8 @@ function UpdateCar() {
     const { TextArea } = Input;
     const [form] = Form.useForm()
     const { Option } = Select
-    const [op1, setOp1] = useState("")
-    const [op2, setOp2] = useState("")
+    // const [op1, setOp1] = useState("")
+    // const [op2, setOp2] = useState("")
     const [data, setData] = useState({})
     const [imgs, setImgs] = useState([])
     const [imgs1, setImgs1] = useState([])
@@ -54,6 +54,7 @@ function UpdateCar() {
                 form.setFieldsValue(res?.data?.data)
                 setData(res?.data?.data)
             })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
     const onFinish = (values) => {

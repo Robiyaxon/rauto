@@ -222,6 +222,7 @@ function Cars({ dataSource, deleteCar, getCars }) {
                 }
             } : {},
         ]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [lang, type]);
 
     return (

@@ -59,6 +59,7 @@ function Orders({dataSource, deleteOrder}) {
                 }
             } : {},
         ]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[lang]) ;
 
     return (

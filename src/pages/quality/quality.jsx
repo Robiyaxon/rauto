@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import KomisImg from '../../images/komissia.png'
+// import KomisImg from '../../images/komissia.png'
 import { Language } from '../../lang/Languages'
 import '../../components/style.css'
 

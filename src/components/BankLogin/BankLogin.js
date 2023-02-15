@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/heading-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import {useEffect, useRef, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
-import {Radio} from 'antd';
 import axios from "../../api";
 import {Language} from "../../lang/Languages";
 import {useSelector} from "react-redux";
@@ -15,12 +16,12 @@ function BankLogin() {
 
     let navigate = useNavigate()
 
-    const onChange = (e) => {
-        setValues({
-            ...values,
-            value: e.target.value
-        });
-    };
+    // const onChange = (e) => {
+    //     setValues({
+    //         ...values,
+    //         value: e.target.value
+    //     });
+    // };
 
     let token = localStorage.getItem('bank_token')
 
@@ -49,6 +50,7 @@ function BankLogin() {
 
     useEffect(() => {
         if (!!token) navigate('/admin/applications')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [token])
 
     const {lang} = useSelector((state) => state.lang);
