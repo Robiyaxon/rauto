@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {Button, Checkbox, Col, Collapse, Input, message, Radio, Row, Select, Slider} from 'antd'
@@ -32,6 +33,7 @@ const Car = ({addCompare}) => {
 
     useEffect(() => {
         dispatch(getCars())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {

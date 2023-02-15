@@ -971,7 +971,7 @@ export const Language = {
   firstPayment: ["Dastlabki to`lov", "Первоначальный платеж"],
   rateOfYear: ["Yillik foiz stafkasi", "Годовая процентная ставка"],
   loanPeriod: ["Kredit muddati", "Срок кредита"],
-  month: ["oy", "месяц"],
+  // month: ["oy", "месяц"],
   loanAmount: ["Kredit miqdori", "Величина займа"],
   monthlyPayment: ["Oylik to`lov", "Ежемесячно оплата"],
   calculateInsertAmount: [
