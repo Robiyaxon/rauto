@@ -27,7 +27,7 @@ function AutoPodbor() {
                 <span></span>
             </div>
             <div className='pages-container'>
-                <img className='vikup-img' src={AutoPod} alt='photo-malibu' />
+                <img className='vikup-img' src={AutoPod} alt='' />
                 <div className='komissia-wrap'>
                     <h3 className='komissia-title'>{p2[lang]}</h3>
                     <ul className='komissia-list'>
