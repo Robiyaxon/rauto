@@ -5,7 +5,7 @@ import {useMediaQuery} from "react-responsive"
 
 function CardsAdmin() {
 
-    const is1024 = useMediaQuery({query: "(max-width: 1024px)"})
+    // const is1024 = useMediaQuery({query: "(max-width: 1024px)"})
 
     return (
         <div className="d-flex">
