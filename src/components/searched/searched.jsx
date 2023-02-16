@@ -1,9 +1,10 @@
 import { useState, useEffect, useContext } from 'react';
 import { Context as LanguageContext } from '../../Context/Language';
-import context from '../../lang/lang';
 import { useParams } from 'react-router-dom'
+import axios from 'axios';
 
 function SearchedPage() {
+    // eslint-disable-next-line no-unused-vars
     const { lang, setLang } = useContext(LanguageContext);
     const { question } = useParams()
     const [page, setPage] = useState([])

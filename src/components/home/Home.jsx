@@ -488,42 +488,42 @@ function Home({ addCompare }) {
                   </button>
                 </div>
               </div>
-              <div className="form">
+              <form className="form">
                 <h3 className="form__title">{NarxiniAniqlash[lang]}</h3>
                 <h4 className="form__item-name">{Marka[lang]}</h4>
                 <div className="form__item">
-                  <input type="text" placeholder={narxiA[lang]} />
+                  <input type="text" placeholder={narxiA[lang]} required />
                 </div>
-                <h4 className="form__item-name">{Model[lang]}</h4>
+                <h4 className="form__item-name">{Model[lang]} *</h4>
                 <div className="form__item">
-                  <input type="text" placeholder={narxiB[lang]} />
+                  <input type="text" placeholder={narxiB[lang]} required />
                 </div>
-                <h4 className="form__item-name">{eleven[lang]}</h4>
+                <h4 className="form__item-name">{eleven[lang]} *</h4>
                 <div className="form__item">
-                  <input type="number" placeholder={narxiC[lang]} />
+                  <input type="number" placeholder={narxiC[lang]} required />
                 </div>
-                <h4 className="form__item-name">{Probeg[lang]}</h4>
+                <h4 className="form__item-name">{Probeg[lang]} *</h4>
                 <div className="form__item">
-                  <input type="number" placeholder={narxiD[lang]} />
+                  <input type="number" placeholder={narxiD[lang]} required />
                 </div>
                 <h4 className="form__item-name form__item-name-row">
                   {Aloqa[lang]}
                 </h4>
                 <div className="form__list">
                   <div className="form__item">
-                    <input type="text" placeholder={m1[lang]} />
+                    <input type="text" placeholder={m1[lang]} required />
                   </div>
                   <div className="form__item">
-                    <input type="number" placeholder={m2[lang]} />
+                    <input type="number" placeholder={m2[lang]} required />
                   </div>
                   <div className="form__item">
-                    <input type="email" placeholder={mailA[lang]} />
+                    <input type="email" placeholder={mailA[lang]} required />
                   </div>
                 </div>
                 <button className="form__button narx-aniqla">
                   {NarxiniAniqlash[lang]}
                 </button>
-              </div>
+              </form>
             </div>
           </div>
         </section>

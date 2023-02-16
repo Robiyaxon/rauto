@@ -188,7 +188,14 @@ strong {
   outline: none;
   transition: 0.5s;
 }
-
+@media(min-width:0) and (max-width:600.9px){
+  .search_form input {
+    display: none !important;
+  }
+  .deff{
+    display: none;
+  }
+}
 .box {
   position: absolute;
   margin-left: 15%;
@@ -2253,7 +2260,12 @@ label {
   box-shadow: none;
   color: #ffffff;
 }
-
+.ant-input:placeholder-shown{
+  font-size: 15px !important;
+}
+.ant-input-affix-wrapper > .ant-input:not(textarea){
+  font-size: 15px !important;
+}
 .table-condensed thead th,
 .table-condensed tbody td {
   padding: 5px;
@@ -3459,5 +3471,22 @@ ul.show {
 
   #sidebar-menu > ul > li > a:hover{
     background-color: rgb(5 133 122 / 50%);
+  }
+}
+@media (min-width:0) and (max-width:600.9px){
+  .announcements_list {
+    margin-left: 0;
+    width: 100%;
+  }
+  .announcements_list h4{
+    margin-top: 3rem !important;
+  }
+  .excelWr{
+    margin-left: 10px;
+    padding-top: 50px;
+  }
+  .statistics_wrapper{
+    width: 100%;
+    margin-left: 0;
   }
 }

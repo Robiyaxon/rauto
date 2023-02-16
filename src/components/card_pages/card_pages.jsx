@@ -81,7 +81,7 @@ function AdminCards() {
                 <div className="card-avto">
                     <div className="card-avto-body page_body_admin">
                         <div className="box page_box content_wrapper">
-                            {
+                           { 
                                 !is1024 &&
                                 <form name="search" className="search_form">
                                     <input

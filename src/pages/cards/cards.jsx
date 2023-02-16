@@ -9,10 +9,7 @@ function CardsAdmin() {
 
     return (
         <div className="d-flex">
-            {
-                !is1024 &&
                 <AdminHeader/>
-            }
             <AdminCards/>
         </div>
     );

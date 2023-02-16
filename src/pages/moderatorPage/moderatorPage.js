@@ -53,7 +53,7 @@ function MadAdminPage() {
                             type='text'
                             className='input'
                             name='txt'
-                            onmouseout="document.search.txt.value = ''"
+                            onMouseOut="document.search.txt.value = ''"
                         />
                         <span className='deff'>{search[lang]}</span>
                     </form>

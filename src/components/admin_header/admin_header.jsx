@@ -42,7 +42,9 @@ function AdminHeader() {
                     <h1>RAUTO</h1>
                     <MenuFoldOutlined onClick={() => setIsClose(!isClose)} />
                 </div>
-                {isClose ? <div id="sidebar-menu" className="my__sm__main">
+                {
+                isClose ?
+                 <div id="sidebar-menu" className="my__sm__main">
                     <ul className="metismenu" id="side-menu">
                         {type === "admin" && (
                             <li>

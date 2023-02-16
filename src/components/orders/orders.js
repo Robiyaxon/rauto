@@ -39,6 +39,11 @@ function Orders({dataSource, deleteOrder}) {
                 key: 'phone',
             },
             {
+                title: 'Id',
+                dataIndex: '_id',
+                key: '_id',
+            },
+            {
                 title: Batafsil[lang],
                 dataIndex: '_id',
                 key: '_id',

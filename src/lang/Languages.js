@@ -849,6 +849,21 @@ export const Language = {
   //
   welcome: ["Salom, Admin!", "Привет, Админ!"],
   //
+
+  //viloyat
+  andijon:["Andijon viloyati","Андижанская область"],
+  toshkent:["Toshkent","Ташкент"],
+  fargona:["Farg`ona viloyati","Ферганская область"],
+  jizzah:["Jizzah viloyati","Джизакская область"],
+  xorazm:["Xorazm viloyati","Хорезмская область"],
+  namangan:["Namangan viloyati","Наманганская область"],
+  navoiy:["Navoiy viloyati","Навоийская область"],
+  qashqadaryo:["Qashqadaryo viloyati","Кашкадарьинская область"],
+  qoraq:["Qoraqalpog`iston Respublikasi","Республика Каракалпакстан"],
+  samarqand:["Samarkand viloyati","Самаркандская область"],
+  sirdaryo:["Samarkand viloyati","Сырдарьинская область"],
+  surxondaryo:["Surxondaryo viloyati","Сурхандарьинская область"],
+  toshkentvil:["Toshkent viloyati","Ташкентская областьp"],
   mail: ["Email", "Почта"],
   pass: ["Parol", "Пароль"],
   k: ["Kirish", "Войти"],
@@ -870,6 +885,7 @@ export const Language = {
   listCars: ["Avtomashinalar ro'yxati", "Список автомобилей"],
   name1: ["Nomi", "Имя"],
   phone: ["Telefon", "Телефон"],
+  error:["Parol yoki telefon raqam noto`g`ri!!","salom dunyo"],
   region: ["Viloyat", "Область"],
   aksiya: ["Aksiya", "Акция"],
   status: ["Holati", "Состояния"],

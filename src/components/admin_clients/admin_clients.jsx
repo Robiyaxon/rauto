@@ -53,7 +53,7 @@ function ClientsAdmin() {
                             type='text'
                             className='input'
                             name='txt'
-                            onmouseout="document.search.txt.value = ''"
+                            onMouseOut="document.search.txt.value = ''"
                             onChange={e => setSearchTerm(e.target.value)}
                         />
                         <span className='deff'>{search[lang]}</span>

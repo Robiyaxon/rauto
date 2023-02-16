@@ -44,7 +44,7 @@ function InfoComp(props) {
             <div className="pinfo">
                 <LogoutComponent/>
             </div>
-            <input type="file" onChange={event => setFile(event?.target?.files[0])}/>
+            <input type="file"  onChange={event => setFile(event?.target?.files[0])}/>
             <div>
                 <Button type="primary" onClick={() => handleSubmit()}>
                     {send[lang]}
@@ -54,7 +54,7 @@ function InfoComp(props) {
                 data?.map((i, k) => {
                     return (
                         <div key={k} className="excelRow">
-                            <Button onClick={() => showModal(i?._id)}>Yuklab olish</Button>
+                            <Button onClick={() => showModal(i?._id)} target="_blank">Yuklab olish</Button>
                             <div className="m-l-10">
                                 {i?.photo[0]}
                             </div>

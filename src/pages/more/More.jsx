@@ -27,7 +27,7 @@ import { toast } from "react-toastify";
 
 function More() {
     const { id } = useParams()
-    const [data, setData] = useState({ name: '', phone: '' })
+    const [data, setData] = useState({ name: "", phone: "", carId: id });
     const [car, setCar] = useState(null)
     // const navigate = useNavigate()
     const { lang } = useSelector(state => state.lang)
@@ -39,15 +39,18 @@ function More() {
     }
 
     const createOrder = async () => {
-        await axios
+        if (data.name && data.phone) {
+          await axios
             .post(`${MainApi}/order/add`, data)
-            .then(res => {
-                setData({ name: ' ', phone: ' ' })
-                toast.success("Muvafaqiyatli buyurtma berildi.")
-            }
-            )
-            .catch(err => new Error(err))
-    }
+            .then((res) => {
+              setData({ name: " ", phone: " " });
+              toast.success("Muvafaqiyatli buyurtma berildi.");
+            })
+            .catch((err) => new Error(err));
+        }else{
+            toast.error("Iltimos barcha qatorlarni to'ldiring",  { autoClose: 500 });
+        }
+      };
 
     // const handleNav = () => {
     //     window.location.href = "http://rauto-calculator.uz"

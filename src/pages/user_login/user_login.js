@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {  message } from 'antd';
+import {  Input, message } from 'antd';
 import axios from "../../api";
 import { Language } from "../../lang/Languages";
 import { useSelector } from "react-redux";
@@ -14,18 +14,31 @@ function UserLogin() {
         password: "",
         value: 1
     });
+    console.log(values);
     const [messageApi, contextHolder] = message.useMessage();
     let navigate = useNavigate()
 
     let token = localStorage.getItem('token')
 
+    
+    // некоторые
+    useEffect(() => {
+        if (!!token) navigate('/admin/cards')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [token])
+
+    const { lang } = useSelector(state => state.lang)
+
+    const { pass, k, phone } = Language
     const handleSubmit = (e) => {
+        const {error} =Language
+        const error2=error[lang]
         e.preventDefault()
         if (values?.phone !== "" || values?.password !== "" || values?.value !== "") {
             if (values?.value !== 1 || values?.value !== 2 || values?.value !== 3 ) {
                 messageApi.open({
                     type: 'error',
-                    content: 'Parol or phone error!!',
+                    content: error2,
                 });
             }
             
@@ -68,7 +81,7 @@ function UserLogin() {
             if (values?.value === 3) {
                 axios.post("auth/login",
                     {
-                        phone: values?.phone,
+                        phone: +998 + values?.phone,
                         password: values?.password,
                     }
                 ).then(e => {
@@ -83,16 +96,6 @@ function UserLogin() {
             }
         }
     }
-    // некоторые
-    useEffect(() => {
-        if (!!token) navigate('/admin/cards')
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [token])
-
-    const { lang } = useSelector(state => state.lang)
-
-    const { pass, k, phone } = Language
-
     return (
         <div className="wr100">
             {contextHolder}
@@ -118,38 +121,64 @@ function UserLogin() {
                             <div className='form-group'>
                                 <div className='col-12'>
                                     <label>{phone[lang]}</label>
-                                    <input
+                                    {/* <input
                                         ref={phone}
                                         className='form-control email_input'
                                         type='number'
                                         required
                                         name='number'
-                                        placeholder='phone'
+                                        placeholder={phone[lang]}
                                         value={values?.phone}
                                         onChange={event => setValues({
                                             ...values,
                                             phone: event.target.value
                                         })}
-                                    />
+                                    /> */}
+                                      <Input prefix="+998" 
+                                       ref={phone}
+                                       className='form-control email_input'
+                                       type='number'
+                                       required
+                                       name='number'
+                                       placeholder={phone[lang]}
+                                       value={values?.phone}
+                                       onChange={event => setValues({
+                                           ...values,
+                                           phone: event.target.value
+                                       })}
+                                      />
                                 </div>
                             </div>
 
                             <div className='form-group'>
                                 <div className='col-12'>
                                     <label>{pass[lang]}</label>
-                                    <input
+                                    {/* <input
                                         ref={password}
                                         className='form-control password_input'
                                         type='password'
                                         required
                                         name='password'
-                                        placeholder='Password'
+                                        placeholder={pass[lang]}
                                         value={values?.password}
                                         onChange={event => setValues({
                                             ...values,
                                             password: event.target.value
                                         })}
-                                    />
+                                    /> */}
+                                    <Input.Password
+                                        ref={password}
+                                        className='form-control password_input'
+                                        type='password'
+                                        required
+                                        name='password'
+                                        placeholder={pass[lang]}
+                                        value={values?.password}
+                                        onChange={event => setValues({
+                                            ...values,
+                                            password: event.target.value
+                                        })}
+                                         />
                                 </div>
                             </div>
                             <div className='form-group text-center m-t-20'>
