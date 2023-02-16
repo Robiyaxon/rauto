@@ -1,6 +1,6 @@
 import AdminHeader from "../../components/admin_header/admin_header";
 import AdminCards from "../../components/card_pages/card_pages";
-import {useMediaQuery} from "react-responsive"
+// import {useMediaQuery} from "react-responsive"
 
 
 function CardsAdmin() {
