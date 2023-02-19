@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 // import KomisImg from '../../images/komissia.png'
 import { Language } from '../../lang/Languages'
 import '../../components/style.css'
-
+import img from "../../assets/guvohnoma.jpg"
 function Quality() {
     const { lang } = useSelector(state => state.lang)
 
@@ -13,6 +13,9 @@ function Quality() {
                 <h3 className='komissia-title'>{qu1[lang]}</h3>
                 <div className='komissia-wrap'>
                     <h3>{qu2[lang]}</h3>
+                    <div className='sifat_23'>
+                      <div className='sifat1'>
+
                     <ul className='komissia-list'>
                         <li>{qu3[lang]}</li>
                         <li>{qu4[lang]}</li>
@@ -21,6 +24,10 @@ function Quality() {
                         <li>{qu7[lang]}</li>
                         <li className='mt-3'>{qu8[lang]}</li>
                     </ul>
+                    </div>
+                    <img src={img} alt=""  />   
+                    </div>
+                   
                 </div>
             </div>
         </main>

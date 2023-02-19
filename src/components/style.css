@@ -2406,12 +2406,38 @@ main .social .container {
     width: 100%;
     display: flex;
 }
-
+.sifat_23{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sifat_23 img{
+    width: 40%;
+    height: 600px;
+}
 .about__slider {
     width: 42%;
     padding-left: 40px;
 }
+.sifat1{
+    width: 47%;
+}
+@media(min-width:0) and (max-width:600.9px){
+    .sifat1{
+        width: 100%;
+    }  
+    .sifat_23{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
+    .sifat_23 img{
+        width: 90%;
+        height: 600px;
+    }
+}
 .im {
     width: 100%;
 }
@@ -2678,8 +2704,9 @@ main .social .container {
 
 .about-img {
     display: block;
-    max-width: 750px;
+    max-width: 80%;
     width: 100%;
+    height: 700px;
     margin: 0 auto;
 }
 
@@ -2718,4 +2745,9 @@ td > button {
 }
 .div_button input{
    color: red !important;
+}
+@media(min-width:0) and (max-width:1100.9px){
+    .about-img {
+        height: 500px;
+    }
 }

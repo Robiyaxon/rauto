@@ -2,7 +2,7 @@
 import { useSelector } from 'react-redux'
 import Avtosalon from '../../images/ravtosalon.jpg'
 import mashinalar from '../../images/mashinalar.jpeg'
-import malibu from "../../images/malibu2.jpg"
+import malibu from "../../assets/guvohnoma.jpg"
 import { Language } from '../../lang/Languages'
 import '../../components/style.css'
 

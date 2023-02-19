@@ -556,7 +556,7 @@ function Home({ addCompare }) {
               >
                 {cars?.length &&
                   cars?.map((item, index) => {
-                    if (item.aksiya === "Aksiya" && item?.status)
+                    if (item.aksiya === "Aksiya" || item.aksiya === "aksiya")
                       return (
                         <SwiperSlide className="swiper-slide" key={index}>
                           <div className=" cards-slider__card card">

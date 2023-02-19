@@ -136,7 +136,7 @@ export const Language = {
     "АКЦИИ, СКИДКИ, СПЕЦПРЕДЛОЖЕНИЯ",
   ],
   Batafsil: ["Batafsil", "Подробнее"],
-  BARCHA_TAKLIFLAR: ["BARCHA TAKLIFLAR", "ВСЕ ПРЕДЛОЖЕНИЯ"],
+  BARCHA_TAKLIFLAR: ["BOSHQA TAKLIFLAR", "ДРУГИЕ ПРЕДЛОЖЕНИЯ"],
 
   //Footer
   f1: ["Biz haqimizda:", "О нас:"],

@@ -21,6 +21,7 @@ const Aksiya = () => {
                         <li>{aksiya_5[lang]}</li>
                         <li>{aksiya_6[lang]} </li>
                         <br />
+                        
                         <li>{aksiya_7[lang]}</li>
                     </ul>
                 </div>
